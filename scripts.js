@@ -25,19 +25,19 @@ function playRound(playerSelection, computerSelection) {
         round++
     } else if (playerSelection === computerSelection){
         console.log("Draw!");
-        
         round++
     }
 }
 
 function playGame() {
     while (round != 5) {
+        playerSelection = prompt("Choose your sign").toLowerCase();
+        let computerSelection = getComputerChoice()
         playRound(playerSelection, computerSelection);
         console.log(round);
     }
 }
 let round = 0;
-const computerSelection = getComputerChoice();
-const playerSelection = "roCk".toLowerCase();
-
+let computerSelection = getComputerChoice()
+let playerSelection = "";
 playGame();
