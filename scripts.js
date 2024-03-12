@@ -34,7 +34,7 @@ function playGame() {
         playerSelection = prompt("Choose your sign").toLowerCase();
         let computerSelection = getComputerChoice()
         playRound(playerSelection, computerSelection);
-        console.log(round);
+        console.log("Round: " + round);
     }
 }
 let round = 0;
